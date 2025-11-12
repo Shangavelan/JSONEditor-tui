@@ -1,0 +1,32 @@
+{
+	"device":	{
+		"name":	"SensorBoard",
+		"version":	2,
+		"features":	["temperature", "humidity", "pressure"],
+		"config":	{
+			"sampling_rate":	1000,
+			"thresholds":	{
+				"min_temp":	-10.5,
+				"max_temp":	50.2
+			},
+			"enabled":	true
+		}
+	},
+	"network":	{
+		"wifi":	{
+			"ssid":	"IoT_Lab",
+			"password":	"12345678",
+			"ip":	"192.168.1.50"
+		},
+		"ethernet":	{
+			"enabled":	false
+		}
+	},
+	"logs":	[{
+			"timestamp":	"2025-11-12T14:41:00Z",
+			"event":	"boot"
+		}, {
+			"timestamp":	"2025-11-11T10:20:00Z",
+			"event":	"sensor_read"
+		}]
+}
